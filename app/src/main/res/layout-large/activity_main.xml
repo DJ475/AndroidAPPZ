@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:backgroundTint="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.99"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/UserName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/EnterRecipeName"
+            android:textAlignment="center"
+            android:layout_weight="0.15">
+        </EditText>
+
+        <EditText
+            android:id="@+id/UserIngredient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/EnterRecipeIngredient"
+            android:textAlignment="center"
+            android:layout_weight="0.15">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.99">
+
+        <EditText
+            android:id="@+id/UserInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/EnterRecipeInstruction"
+            android:textAlignment="center"
+            android:layout_weight="0.15">
+        </EditText>
+
+        <EditText
+            android:id="@+id/UserNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/EnterRecipeNum"
+            android:textAlignment="center"
+            android:layout_weight="0.15">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.80"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/SwitchDelete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.5">
+        </androidx.appcompat.widget.SwitchCompat>
+
+        <ListView
+            android:id="@+id/ListViewRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/FragmentContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.fragment.app.FragmentContainerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Submit_NewButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#000000"
+            android:text="@string/Button_Submit"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="0dp"
+            android:onClick="SubmitRecipe">
+        </Button>
+
+    </LinearLayout>
+</LinearLayout>

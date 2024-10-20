@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Button_Submit">Submit\nRecipe</string>
+    <string name="FormatEnterRecipe">
+        The Format to add a recipe(1,2,3,4 required):\n
+
+        \n1.Recipe Name,
+        \n2.Recipe Ingredients,
+        \n3.Recipe Instructions,
+        \n4.Recipe Number.
+    </string>
+    <string name="EnterRecipeName">Enter Your Recipes Name Here:</string>
+    <string name="EnterRecipeIngredient">Enter Your Recipes Ingredients Here:</string>
+    <string name="EnterRecipeInstruction">Enter Your Recipes Instruction Here:</string>
+    <string name="EnterRecipeNum">Enter Your Recipes number Here:</string>
+</resources>
